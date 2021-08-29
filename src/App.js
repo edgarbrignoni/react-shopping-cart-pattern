@@ -13,10 +13,15 @@ class App extends Component {
     ],
   };
 
-  constructor(props) {
-    super(props);
-    console.log("App - Constructor", this.props);
-    // this.state = this.props.something;
+  constructor() {
+    super();
+    console.log("App - Constructor");
+  }
+
+  componentDidMount() {
+    console.log("App - Mounted");
+    // Ajax Call
+    // this.setState({ movies });
   }
 
   handleReset = () => {
