@@ -13,6 +13,7 @@ class Counters extends Component {
 
   handleIncrement = counter => {
     const counters = [...this.state.counters];
+    counters[0] = { ...counter };
     counters[0].value++;
     console.log(this.state.counters[0]);
   };
